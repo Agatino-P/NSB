@@ -1,0 +1,115 @@
+2024-08-02 20:47:13.9646|1|Info|LoggingConfiguration|Logging to D:\GitLocalRepository\NSB\src\.logs\servicecontrol\logfile.2024-08-02.txt with LogLevel 'Info'
+2024-08-02 20:47:14.0102|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for error log queue to import, default name will be used
+2024-08-02 20:47:14.4470|1|Info|Particular.ServiceControl.HostApplicationBuilderExtensions|
+-------------------------------------------------------------
+ServiceControl Version:             5.5.2+d7a12c14b6d4741189541e393ff33ca20cc7babf
+Audit Retention Period (optional):  
+Error Retention Period:             10.00:00:00
+Ingest Error Messages:              True
+Forwarding Error Messages:          False
+ServiceControl Logging Level:       Info
+Selected Transport Customization:   LearningTransport
+-------------------------------------------------------------
+2024-08-02 20:47:14.4860|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for Learning Transport (Non-Production)
+2024-08-02 20:47:14.5371|1|Info|ServiceControl.Persistence.PersistenceManifestLibrary|Found persistence manifest for RavenDB
+2024-08-02 20:47:22.3729|13|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2024-08-02 20:47:22.3729|10|Error|Microsoft.Extensions.Hosting.Internal.Host|Hosting failed to start|System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+   at Raven.Client.Http.RequestExecutor.ExecuteAsync[TResult](ServerNode chosenNode, Nullable`1 nodeIndex, JsonOperationContext context, RavenCommand`1 command, Boolean shouldRetry, SessionInfo sessionInfo, CancellationToken token) in D:\Builds\RavenDB-Stable-5.4\54136\src\Raven.Client\Http\RequestExecutor.cs:line 920
+   at Raven.Client.Documents.Operations.MaintenanceOperationExecutor.SendAsync[TResult](IMaintenanceOperation`1 operation, CancellationToken token) in D:\Builds\RavenDB-Stable-5.4\54136\src\Raven.Client\Documents\Operations\MaintenanceOperationExecutor.cs:line 61
+   at Raven.Client.Documents.Indexes.IndexCreation.CreateIndexesAsync(IEnumerable`1 indexes, IDocumentStore store, DocumentConventions conventions, String database, CancellationToken token) in D:\Builds\RavenDB-Stable-5.4\54136\src\Raven.Client\Documents\Indexes\IndexCreation.cs:line 79
+   at ServiceControl.Persistence.RavenDB.DatabaseSetup.Execute(CancellationToken cancellationToken) in /_/src/ServiceControl.Persistence.RavenDB/DatabaseSetup.cs:line 19
+   at ServiceControl.Persistence.RavenDB.RavenExternalPersistenceLifecycle.Initialize(CancellationToken cancellationToken) in /_/src/ServiceControl.Persistence.RavenDB/RavenExternalPersistenceLifecycle.cs:line 67
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2024-08-02 20:47:52.9415|1|Info|LoggingConfiguration|Logging to D:\GitLocalRepository\NSB\src\.logs\servicecontrol\logfile.2024-08-02.txt with LogLevel 'Info'
+2024-08-02 20:47:52.9789|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for error log queue to import, default name will be used
+2024-08-02 20:47:53.1912|1|Info|Particular.ServiceControl.HostApplicationBuilderExtensions|
+-------------------------------------------------------------
+ServiceControl Version:             5.5.2+d7a12c14b6d4741189541e393ff33ca20cc7babf
+Audit Retention Period (optional):  
+Error Retention Period:             10.00:00:00
+Ingest Error Messages:              True
+Forwarding Error Messages:          False
+ServiceControl Logging Level:       Info
+Selected Transport Customization:   LearningTransport
+-------------------------------------------------------------
+2024-08-02 20:47:53.2198|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for Learning Transport (Non-Production)
+2024-08-02 20:47:53.2477|1|Info|ServiceControl.Persistence.PersistenceManifestLibrary|Found persistence manifest for RavenDB
+2024-08-02 20:47:59.2150|9|Info|NServiceBus.LicenseManager|Selected active license from C:\Users\agatino\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2024-10-25
+2024-08-02 20:47:59.4166|13|Info|NServiceBus.LearningTransportMessagePump|Dropping message '08315b55-7f9a-45bf-a7ec-c354a9a0508e' as the specified TimeToBeReceived of '00:00:40' expired since sending the message at '2024-08-02T18:42:00.9771558Z'. Current UTC time is '2024-08-02T18:47:59.4126865Z'
+2024-08-02 20:47:59.4308|15|Info|NServiceBus.LearningTransportMessagePump|Dropping message '2bc6de4d-be07-4e6f-ac99-50a1fc18ce30' as the specified TimeToBeReceived of '00:00:40' expired since sending the message at '2024-08-02T18:43:16.5912442Z'. Current UTC time is '2024-08-02T18:47:59.4129610Z'
+2024-08-02 20:47:59.4308|12|Info|NServiceBus.LearningTransportMessagePump|Dropping message '019e21eb-14c8-40b2-9efc-98297a56aec1' as the specified TimeToBeReceived of '00:00:40' expired since sending the message at '2024-08-02T18:42:56.5739320Z'. Current UTC time is '2024-08-02T18:47:59.4126865Z'
+2024-08-02 20:47:59.4499|10|Info|NServiceBus.LearningTransportMessagePump|Dropping message '133d01f7-d879-49b2-8974-8bf38ebeaa91' as the specified TimeToBeReceived of '00:00:40' expired since sending the message at '2024-08-02T18:42:10.9999797Z'. Current UTC time is '2024-08-02T18:47:59.4131173Z'
+2024-08-02 20:47:59.4499|9|Info|NServiceBus.LearningTransportMessagePump|Dropping message '34182af4-743d-4de8-bb97-88d1bd6d7143' as the specified TimeToBeReceived of '00:00:40' expired since sending the message at '2024-08-02T18:44:38.6944298Z'. Current UTC time is '2024-08-02T18:47:59.4154436Z'
+2024-08-02 20:47:59.4499|14|Info|NServiceBus.LearningTransportMessagePump|Dropping message '359c9d83-278a-489c-a28d-6af447a37ec1' as the specified TimeToBeReceived of '00:00:40' expired since sending the message at '2024-08-02T18:43:06.5866045Z'. Current UTC time is '2024-08-02T18:47:59.4155549Z'
+2024-08-02 20:47:59.4499|10|Info|NServiceBus.LearningTransportMessagePump|Dropping message '4c1d2ce9-a77e-4c18-8916-20bf3481a080' as the specified TimeToBeReceived of '00:00:40' expired since sending the message at '2024-08-02T18:44:27.2504811Z'. Current UTC time is '2024-08-02T18:47:59.4604154Z'
+2024-08-02 20:47:59.4499|9|Info|NServiceBus.LearningTransportMessagePump|Dropping message '3eaf0eba-ccba-4c02-a0b0-69771db7f259' as the specified TimeToBeReceived of '00:00:40' expired since sending the message at '2024-08-02T18:44:58.7141140Z'. Current UTC time is '2024-08-02T18:47:59.4637214Z'
+2024-08-02 20:47:59.4683|9|Info|NServiceBus.LearningTransportMessagePump|Dropping message '64cf718d-2777-428a-b7df-cc5f8465e939' as the specified TimeToBeReceived of '00:00:40' expired since sending the message at '2024-08-02T18:42:21.0178461Z'. Current UTC time is '2024-08-02T18:47:59.4663113Z'
+2024-08-02 20:47:59.4683|10|Info|NServiceBus.LearningTransportMessagePump|Dropping message '5afa58bb-a718-4700-94ca-44055cf1c4cd' as the specified TimeToBeReceived of '00:00:40' expired since sending the message at '2024-08-02T18:44:48.7053813Z'. Current UTC time is '2024-08-02T18:47:59.4661187Z'
+2024-08-02 20:47:59.4946|9|Info|NServiceBus.LearningTransportMessagePump|Dropping message '6a9a1075-7aa7-4e90-84bd-4f7a0e0bff9b' as the specified TimeToBeReceived of '00:00:40' expired since sending the message at '2024-08-02T18:44:07.2215173Z'. Current UTC time is '2024-08-02T18:47:59.4702620Z'
+2024-08-02 20:47:59.5068|12|Info|ServiceControl.Operations.ErrorIngestion|Ensure started. Infrastructure started
+2024-08-02 20:47:59.5274|15|Info|NServiceBus.LearningTransportMessagePump|Dropping message '7bc22b7b-4074-4310-90e1-b318f0ff1abf' as the specified TimeToBeReceived of '00:00:40' expired since sending the message at '2024-08-02T18:42:45.2309428Z'. Current UTC time is '2024-08-02T18:47:59.4727161Z'
+2024-08-02 20:47:59.5274|16|Info|NServiceBus.LearningTransportMessagePump|Dropping message 'a362ed57-a6bd-4296-a156-753f228da6b8' as the specified TimeToBeReceived of '00:00:40' expired since sending the message at '2024-08-02T18:47:12.6605258Z'. Current UTC time is '2024-08-02T18:47:59.5188285Z'
+2024-08-02 20:47:59.5274|14|Info|NServiceBus.LearningTransportMessagePump|Dropping message '9916ec22-82b7-4ec6-9541-eb7739ff31ba' as the specified TimeToBeReceived of '00:00:40' expired since sending the message at '2024-08-02T18:42:31.0370905Z'. Current UTC time is '2024-08-02T18:47:59.5324112Z'
+2024-08-02 20:47:59.5561|16|Info|NServiceBus.LearningTransportMessagePump|Dropping message '7efd44e9-3efd-4a17-8bbc-01cbb35a04eb' as the specified TimeToBeReceived of '00:00:40' expired since sending the message at '2024-08-02T18:43:26.5978617Z'. Current UTC time is '2024-08-02T18:47:59.5328046Z'
+2024-08-02 20:47:59.5561|10|Info|NServiceBus.LearningTransportMessagePump|Dropping message 'cdae0e3d-2966-48a3-b67f-d08b37f4af61' as the specified TimeToBeReceived of '00:00:40' expired since sending the message at '2024-08-02T18:45:08.7258702Z'. Current UTC time is '2024-08-02T18:47:59.5333311Z'
+2024-08-02 20:47:59.5871|11|Info|NServiceBus.LearningTransportMessagePump|Dropping message 'dd9438f2-aeae-4653-a274-b575bcea8dcf' as the specified TimeToBeReceived of '00:00:40' expired since sending the message at '2024-08-02T18:44:17.2473166Z'. Current UTC time is '2024-08-02T18:47:59.5862205Z'
+2024-08-02 20:47:59.5903|10|Info|Particular.LicensingComponent.AuditThroughput.AuditThroughputCollectorHostedService|Starting AuditThroughputCollectorHostedService
+2024-08-02 20:47:59.5903|10|Info|Particular.LicensingComponent.MonitoringThroughput.MonitoringThroughputHostedService|Starting MonitoringThroughputHostedService
+2024-08-02 20:47:59.5903|7|Info|NServiceBus.LearningTransportMessagePump|Dropping message 'dd1fe5fd-1009-4ef3-a97f-e658d0ea1d7e' as the specified TimeToBeReceived of '00:00:40' expired since sending the message at '2024-08-02T18:45:18.7356691Z'. Current UTC time is '2024-08-02T18:47:59.5891517Z'
+2024-08-02 20:47:59.6447|7|Info|ServiceControl.Recoverability.RetryDocumentManager|Found 0 orphaned retry batches from previous sessions.
+2024-08-02 20:47:59.6732|10|Info|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:49200
+2024-08-02 20:47:59.6732|10|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-08-02 20:47:59.6732|10|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2024-08-02 20:47:59.6732|10|Info|Microsoft.Hosting.Lifetime|Content root path: D:\GitLocalRepository\NSB\src\Platform\bin\Debug\net8.0\platform\servicecontrol\servicecontrol-instance
+2024-08-02 20:47:59.8291|11|Info|ServiceControl.Notifications.Email.SendEmailNotificationHandler|Skipping email sending. Notifications turned-off.
+2024-08-02 20:47:59.8414|15|Info|ServiceControl.Notifications.Email.SendEmailNotificationHandler|Skipping email sending. Notifications turned-off.
+2024-08-02 20:47:59.8413|12|Info|ServiceControl.Notifications.Email.SendEmailNotificationHandler|Skipping email sending. Notifications turned-off.
+2024-08-02 20:47:59.8413|14|Info|ServiceControl.Notifications.Email.SendEmailNotificationHandler|Skipping email sending. Notifications turned-off.
+2024-08-02 20:47:59.8413|12|Info|ServiceControl.Notifications.Email.SendEmailNotificationHandler|Skipping email sending. Notifications turned-off.
+2024-08-02 20:47:59.8413|9|Info|ServiceControl.Notifications.Email.SendEmailNotificationHandler|Skipping email sending. Notifications turned-off.
+2024-08-02 20:47:59.8413|14|Info|ServiceControl.Notifications.Email.SendEmailNotificationHandler|Skipping email sending. Notifications turned-off.
+2024-08-02 20:47:59.8413|11|Info|ServiceControl.Notifications.Email.SendEmailNotificationHandler|Skipping email sending. Notifications turned-off.
+2024-08-02 20:47:59.9330|10|Info|ServiceControl.Notifications.Email.SendEmailNotificationHandler|Skipping email sending. Notifications turned-off.
+2024-08-02 20:48:39.5984|15|Info|Particular.LicensingComponent.AuditThroughput.AuditThroughputCollectorHostedService|Gathering throughput from audit for 01/08/2024
+2024-08-02 20:48:39.6496|14|Info|Particular.LicensingComponent.AuditThroughput.AuditThroughputCollectorHostedService|ServiceControl Audit instance at http://localhost:49201 detected running version 5.5.2
+2024-08-02 20:50:01.4273|27|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2024-08-02 20:50:01.4363|25|Info|Particular.LicensingComponent.MonitoringThroughput.MonitoringThroughputHostedService|Stopping MonitoringThroughputHostedService
+2024-08-02 20:50:01.4503|15|Info|Particular.LicensingComponent.AuditThroughput.AuditThroughputCollectorHostedService|Stopping AuditThroughputCollectorHostedService
+2024-08-02 20:50:01.4683|14|Info|NServiceBus.RunningEndpointInstance|Initiating shutdown.
+2024-08-02 20:50:01.4683|21|Info|NServiceBus.RunningEndpointInstance|Shutdown complete.
+2024-08-02 20:51:04.3771|1|Info|LoggingConfiguration|Logging to D:\GitLocalRepository\NSB\src\.logs\servicecontrol\logfile.2024-08-02.txt with LogLevel 'Info'
+2024-08-02 20:51:04.4031|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for error log queue to import, default name will be used
+2024-08-02 20:51:04.5554|1|Info|Particular.ServiceControl.HostApplicationBuilderExtensions|
+-------------------------------------------------------------
+ServiceControl Version:             5.5.2+d7a12c14b6d4741189541e393ff33ca20cc7babf
+Audit Retention Period (optional):  
+Error Retention Period:             10.00:00:00
+Ingest Error Messages:              True
+Forwarding Error Messages:          False
+ServiceControl Logging Level:       Info
+Selected Transport Customization:   LearningTransport
+-------------------------------------------------------------
+2024-08-02 20:51:04.5746|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for Learning Transport (Non-Production)
+2024-08-02 20:51:04.5940|1|Info|ServiceControl.Persistence.PersistenceManifestLibrary|Found persistence manifest for RavenDB
+2024-08-02 20:51:09.5282|10|Info|NServiceBus.LicenseManager|Selected active license from C:\Users\agatino\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2024-10-25
+2024-08-02 20:51:09.7113|9|Info|NServiceBus.LearningTransportMessagePump|Dropping message '6359f21e-b9b0-402c-a156-5c633f2717f6' as the specified TimeToBeReceived of '00:00:40' expired since sending the message at '2024-08-02T18:50:07.8554008Z'. Current UTC time is '2024-08-02T18:51:09.7083543Z'
+2024-08-02 20:51:09.7801|10|Info|ServiceControl.Operations.ErrorIngestion|Ensure started. Infrastructure started
+2024-08-02 20:51:09.8759|15|Info|ServiceControl.Recoverability.RetryDocumentManager|Found 0 orphaned retry batches from previous sessions.
+2024-08-02 20:51:09.8931|12|Info|Particular.LicensingComponent.AuditThroughput.AuditThroughputCollectorHostedService|Starting AuditThroughputCollectorHostedService
+2024-08-02 20:51:09.8931|12|Info|Particular.LicensingComponent.MonitoringThroughput.MonitoringThroughputHostedService|Starting MonitoringThroughputHostedService
+2024-08-02 20:51:09.9408|12|Info|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:49200
+2024-08-02 20:51:09.9408|12|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-08-02 20:51:09.9408|12|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2024-08-02 20:51:09.9408|12|Info|Microsoft.Hosting.Lifetime|Content root path: D:\GitLocalRepository\NSB\src\Platform\bin\Debug\net8.0\platform\servicecontrol\servicecontrol-instance
+2024-08-02 20:51:49.9154|7|Info|Particular.LicensingComponent.AuditThroughput.AuditThroughputCollectorHostedService|Gathering throughput from audit for 01/08/2024
+2024-08-02 20:51:49.9542|7|Info|Particular.LicensingComponent.AuditThroughput.AuditThroughputCollectorHostedService|ServiceControl Audit instance at http://localhost:49201 detected running version 5.5.2
+2024-08-02 20:53:44.0233|20|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2024-08-02 20:53:44.0442|13|Info|Particular.LicensingComponent.MonitoringThroughput.MonitoringThroughputHostedService|Stopping MonitoringThroughputHostedService
+2024-08-02 20:53:44.0592|9|Info|Particular.LicensingComponent.AuditThroughput.AuditThroughputCollectorHostedService|Stopping AuditThroughputCollectorHostedService
+2024-08-02 20:53:44.0798|21|Info|NServiceBus.RunningEndpointInstance|Initiating shutdown.
+2024-08-02 20:53:44.0798|11|Info|NServiceBus.RunningEndpointInstance|Shutdown complete.

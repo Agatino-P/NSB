@@ -1,0 +1,87 @@
+2024-08-02 20:47:13.9716|1|Info|LoggingConfiguration|Logging to D:\GitLocalRepository\NSB\src\.logs\servicecontrol-audit\logfile.2024-08-02.txt with LogLevel 'Info'
+2024-08-02 20:47:14.0129|1|Info|ServiceControl.Audit.Infrastructure.Settings.Settings|No settings found for audit log queue to import, default name will be used
+2024-08-02 20:47:14.4692|1|Info|ServiceControl.Audit.Persistence.PersistenceManifestLibrary|Found persistence manifest for RavenDB
+2024-08-02 20:47:14.4932|1|Info|ServiceControl.Audit.HostApplicationBuilderExtensions|
+-------------------------------------------------------------
+ServiceControl Audit Version:       5.5.2+d7a12c14b6d4741189541e393ff33ca20cc7babf
+Audit Retention Period:             10.00:00:00
+Forwarding Audit Messages:          False
+ServiceControl Logging Level:       Info
+Transport Customization:            LearningTransport,
+Persistence Customization:          RavenDB,
+Persistence:                        RavenDB
+-------------------------------------------------------------
+2024-08-02 20:47:14.5103|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for Learning Transport (Non-Production)
+2024-08-02 20:47:22.3732|13|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2024-08-02 20:47:22.3732|7|Error|Microsoft.Extensions.Hosting.Internal.Host|Hosting failed to start|System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+   at Raven.Client.Http.RequestExecutor.ExecuteAsync[TResult](ServerNode chosenNode, Nullable`1 nodeIndex, JsonOperationContext context, RavenCommand`1 command, Boolean shouldRetry, SessionInfo sessionInfo, CancellationToken token) in D:\Builds\RavenDB-Stable-5.4\54136\src\Raven.Client\Http\RequestExecutor.cs:line 920
+   at Raven.Client.Documents.Operations.MaintenanceOperationExecutor.SendAsync[TResult](IMaintenanceOperation`1 operation, CancellationToken token) in D:\Builds\RavenDB-Stable-5.4\54136\src\Raven.Client\Documents\Operations\MaintenanceOperationExecutor.cs:line 61
+   at Raven.Client.Documents.Indexes.IndexCreation.CreateIndexesAsync(IEnumerable`1 indexes, IDocumentStore store, DocumentConventions conventions, String database, CancellationToken token) in D:\Builds\RavenDB-Stable-5.4\54136\src\Raven.Client\Documents\Indexes\IndexCreation.cs:line 79
+   at ServiceControl.Audit.Persistence.RavenDB.DatabaseSetup.Execute(IDocumentStore documentStore, CancellationToken cancellationToken) in /_/src/ServiceControl.Audit.Persistence.RavenDB/DatabaseSetup.cs:line 58
+   at ServiceControl.Audit.Persistence.RavenDB.RavenExternalPersistenceLifecycle.Initialize(CancellationToken cancellationToken) in /_/src/ServiceControl.Audit.Persistence.RavenDB/RavenExternalPersistenceLifecycle.cs:line 72
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2024-08-02 20:47:52.9014|1|Info|LoggingConfiguration|Logging to D:\GitLocalRepository\NSB\src\.logs\servicecontrol-audit\logfile.2024-08-02.txt with LogLevel 'Info'
+2024-08-02 20:47:52.9328|1|Info|ServiceControl.Audit.Infrastructure.Settings.Settings|No settings found for audit log queue to import, default name will be used
+2024-08-02 20:47:53.1492|1|Info|ServiceControl.Audit.Persistence.PersistenceManifestLibrary|Found persistence manifest for RavenDB
+2024-08-02 20:47:53.1691|1|Info|ServiceControl.Audit.HostApplicationBuilderExtensions|
+-------------------------------------------------------------
+ServiceControl Audit Version:       5.5.2+d7a12c14b6d4741189541e393ff33ca20cc7babf
+Audit Retention Period:             10.00:00:00
+Forwarding Audit Messages:          False
+ServiceControl Logging Level:       Info
+Transport Customization:            LearningTransport,
+Persistence Customization:          RavenDB,
+Persistence:                        RavenDB
+-------------------------------------------------------------
+2024-08-02 20:47:53.1858|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for Learning Transport (Non-Production)
+2024-08-02 20:47:58.1814|10|Info|NServiceBus.LicenseManager|Selected active license from C:\Users\agatino\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2024-10-25
+2024-08-02 20:47:58.4943|11|Info|ServiceControl.Audit.Auditing.AuditIngestion|Ensure started. Infrastructure starting
+2024-08-02 20:47:58.5031|11|Info|ServiceControl.Audit.Auditing.AuditIngestion|Ensure started. Infrastructure started
+2024-08-02 20:47:58.5227|10|Info|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:49201
+2024-08-02 20:47:58.5270|10|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-08-02 20:47:58.5270|10|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2024-08-02 20:47:58.5270|10|Info|Microsoft.Hosting.Lifetime|Content root path: D:\GitLocalRepository\NSB\src\Platform\bin\Debug\net8.0\platform\servicecontrol\servicecontrol-audit-instance
+2024-08-02 20:50:01.4268|14|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2024-08-02 20:50:01.4416|12|Info|ServiceControl.Audit.Auditing.AuditIngestion|Shutting down. Start/stop semaphore acquiring
+2024-08-02 20:50:01.4416|12|Info|ServiceControl.Audit.Auditing.AuditIngestion|Shutting down. Start/stop semaphore acquired
+2024-08-02 20:50:01.4416|12|Info|ServiceControl.Audit.Auditing.AuditIngestion|Shutting down. Infrastructure shut down commencing
+2024-08-02 20:50:01.4416|10|Info|ServiceControl.Audit.Auditing.AuditIngestion|Shutting down. Infrastructure shut down completed
+2024-08-02 20:50:01.4416|10|Info|ServiceControl.Audit.Auditing.AuditIngestion|Shutting down. Start/stop semaphore releasing
+2024-08-02 20:50:01.4416|10|Info|ServiceControl.Audit.Auditing.AuditIngestion|Shutting down. Start/stop semaphore released
+2024-08-02 20:50:01.4495|15|Info|NServiceBus.RunningEndpointInstance|Initiating shutdown.
+2024-08-02 20:50:01.4495|15|Info|NServiceBus.RunningEndpointInstance|Shutdown complete.
+2024-08-02 20:51:04.3606|1|Info|LoggingConfiguration|Logging to D:\GitLocalRepository\NSB\src\.logs\servicecontrol-audit\logfile.2024-08-02.txt with LogLevel 'Info'
+2024-08-02 20:51:04.3875|1|Info|ServiceControl.Audit.Infrastructure.Settings.Settings|No settings found for audit log queue to import, default name will be used
+2024-08-02 20:51:04.5364|1|Info|ServiceControl.Audit.Persistence.PersistenceManifestLibrary|Found persistence manifest for RavenDB
+2024-08-02 20:51:04.5490|1|Info|ServiceControl.Audit.HostApplicationBuilderExtensions|
+-------------------------------------------------------------
+ServiceControl Audit Version:       5.5.2+d7a12c14b6d4741189541e393ff33ca20cc7babf
+Audit Retention Period:             10.00:00:00
+Forwarding Audit Messages:          False
+ServiceControl Logging Level:       Info
+Transport Customization:            LearningTransport,
+Persistence Customization:          RavenDB,
+Persistence:                        RavenDB
+-------------------------------------------------------------
+2024-08-02 20:51:04.5601|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for Learning Transport (Non-Production)
+2024-08-02 20:51:08.6669|7|Info|NServiceBus.LicenseManager|Selected active license from C:\Users\agatino\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2024-10-25
+2024-08-02 20:51:08.9184|12|Info|ServiceControl.Audit.Auditing.AuditIngestion|Ensure started. Infrastructure starting
+2024-08-02 20:51:08.9184|12|Info|ServiceControl.Audit.Auditing.AuditIngestion|Ensure started. Infrastructure started
+2024-08-02 20:51:08.9502|11|Info|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:49201
+2024-08-02 20:51:08.9502|11|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-08-02 20:51:08.9502|11|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2024-08-02 20:51:08.9502|11|Info|Microsoft.Hosting.Lifetime|Content root path: D:\GitLocalRepository\NSB\src\Platform\bin\Debug\net8.0\platform\servicecontrol\servicecontrol-audit-instance
+2024-08-02 20:53:44.0219|17|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2024-08-02 20:53:44.0530|11|Info|ServiceControl.Audit.Auditing.AuditIngestion|Shutting down. Start/stop semaphore acquiring
+2024-08-02 20:53:44.0530|11|Info|ServiceControl.Audit.Auditing.AuditIngestion|Shutting down. Start/stop semaphore acquired
+2024-08-02 20:53:44.0530|11|Info|ServiceControl.Audit.Auditing.AuditIngestion|Shutting down. Infrastructure shut down commencing
+2024-08-02 20:53:44.0530|11|Info|ServiceControl.Audit.Auditing.AuditIngestion|Shutting down. Infrastructure shut down completed
+2024-08-02 20:53:44.0530|11|Info|ServiceControl.Audit.Auditing.AuditIngestion|Shutting down. Start/stop semaphore releasing
+2024-08-02 20:53:44.0530|11|Info|ServiceControl.Audit.Auditing.AuditIngestion|Shutting down. Start/stop semaphore released
+2024-08-02 20:53:44.0588|7|Info|NServiceBus.RunningEndpointInstance|Initiating shutdown.
+2024-08-02 20:53:44.0588|7|Info|NServiceBus.RunningEndpointInstance|Shutdown complete.

@@ -5,16 +5,19 @@ namespace NSP.api.Controllers;
 [Route("[controller]")]
 public class TestController : ControllerBase
 {
-    private readonly ILogger<TestController> _logger;
+    private readonly IMessageSession messageSession;
+    private readonly ILogger<TestController> logger;
 
-    public TestController(ILogger<TestController> logger)
+    public TestController(IMessageSession messageSession, ILogger<TestController> logger)
     {
-        _logger = logger;
+        this.messageSession = messageSession;
+        this.logger = logger;
     }
 
     [HttpGet(Name = "Get")]
-    public async Task<IActionResult> Get()
+    public async Task<IActionResult> Get(string text)
     {
+        await messageSession.SendLocal(new ApiCommand(  text));
         return Ok("Ok");
     }
 }

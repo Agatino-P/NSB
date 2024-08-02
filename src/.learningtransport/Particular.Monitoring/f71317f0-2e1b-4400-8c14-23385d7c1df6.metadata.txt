@@ -1,0 +1,9 @@
+{
+  "NServiceBus.OriginatingEndpoint": "Api",
+  "NServiceBus.OriginatingMachine": "PREC7510A",
+  "$.diagnostics.originating.hostid": "6e20976f031bb61c0be31709fea3d88c",
+  "$.diagnostics.hostdisplayname": "PREC7510A",
+  "NServiceBus.EnclosedMessageTypes": "NServiceBus.Metrics.EndpointMetadataReport",
+  "NServiceBus.ContentType": "application\/json",
+  "NServiceBus.Transport.Learning.TimeToBeReceived": "7.00:00:00"
+}

@@ -1,0 +1,39 @@
+2024-08-02 20:47:13.9638|1|Info|LoggingConfiguration|Logging to D:\GitLocalRepository\NSB\src\.logs\monitoring\logfile.2024-08-02.txt with LogLevel 'Info'
+2024-08-02 20:47:14.4703|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for Learning Transport (Non-Production)
+2024-08-02 20:47:15.4460|6|Info|ServiceControl.Monitoring.ReportThroughputHostedService|Starting ReportThroughputHostedService
+2024-08-02 20:47:15.4748|6|Info|NServiceBus.LicenseManager|Selected active license from C:\Users\agatino\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2024-10-25
+2024-08-02 20:47:15.7662|6|Info|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:49208
+2024-08-02 20:47:15.8337|6|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-08-02 20:47:15.8337|6|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2024-08-02 20:47:15.8337|6|Info|Microsoft.Hosting.Lifetime|Content root path: D:\GitLocalRepository\NSB\src\Platform\bin\Debug\net8.0\platform\servicecontrol\monitoring-instance
+2024-08-02 20:47:22.3718|17|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2024-08-02 20:47:22.3718|8|Info|NServiceBus.RunningEndpointInstance|Initiating shutdown.
+2024-08-02 20:47:22.3895|16|Info|NServiceBus.RunningEndpointInstance|Shutdown complete.
+2024-08-02 20:47:22.4070|16|Info|ServiceControl.Monitoring.ReportThroughputHostedService|Stopping ReportThroughputHostedService timer
+2024-08-02 20:47:52.8709|1|Info|LoggingConfiguration|Logging to D:\GitLocalRepository\NSB\src\.logs\monitoring\logfile.2024-08-02.txt with LogLevel 'Info'
+2024-08-02 20:47:53.1263|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for Learning Transport (Non-Production)
+2024-08-02 20:47:54.0632|6|Info|ServiceControl.Monitoring.ReportThroughputHostedService|Starting ReportThroughputHostedService
+2024-08-02 20:47:54.0857|6|Info|NServiceBus.LicenseManager|Selected active license from C:\Users\agatino\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2024-10-25
+2024-08-02 20:47:54.3333|6|Info|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:49204
+2024-08-02 20:47:54.3333|6|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-08-02 20:47:54.3333|6|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2024-08-02 20:47:54.3398|6|Info|Microsoft.Hosting.Lifetime|Content root path: D:\GitLocalRepository\NSB\src\Platform\bin\Debug\net8.0\platform\servicecontrol\monitoring-instance
+2024-08-02 20:50:01.4264|16|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2024-08-02 20:50:01.4378|12|Info|NServiceBus.RunningEndpointInstance|Initiating shutdown.
+2024-08-02 20:50:01.4378|6|Info|NServiceBus.RunningEndpointInstance|Shutdown complete.
+2024-08-02 20:50:01.4642|6|Info|ServiceControl.Monitoring.ReportThroughputHostedService|Stopping ReportThroughputHostedService timer
+2024-08-02 20:51:04.3575|1|Info|LoggingConfiguration|Logging to D:\GitLocalRepository\NSB\src\.logs\monitoring\logfile.2024-08-02.txt with LogLevel 'Info'
+2024-08-02 20:51:04.5224|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for Learning Transport (Non-Production)
+2024-08-02 20:51:05.1529|6|Info|ServiceControl.Monitoring.ReportThroughputHostedService|Starting ReportThroughputHostedService
+2024-08-02 20:51:05.1725|6|Info|NServiceBus.LicenseManager|Selected active license from C:\Users\agatino\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2024-10-25
+2024-08-02 20:51:05.3787|6|Info|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:49204
+2024-08-02 20:51:05.3787|6|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-08-02 20:51:05.3787|6|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2024-08-02 20:51:05.3787|6|Info|Microsoft.Hosting.Lifetime|Content root path: D:\GitLocalRepository\NSB\src\Platform\bin\Debug\net8.0\platform\servicecontrol\monitoring-instance
+2024-08-02 20:53:44.0213|18|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2024-08-02 20:53:44.0537|10|Info|NServiceBus.RunningEndpointInstance|Initiating shutdown.
+2024-08-02 20:53:44.0594|20|Info|NServiceBus.RunningEndpointInstance|Shutdown complete.
+2024-08-02 20:53:44.0594|20|Info|ServiceControl.Monitoring.ReportThroughputHostedService|Stopping ReportThroughputHostedService timer
